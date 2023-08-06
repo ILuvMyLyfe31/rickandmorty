@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morty One</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="shortcut icon" href="icons/portal.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="sidebar" id="mySidebar">
+        <div class="logo-details">
+            <span class="icon-rm"></span>
+            <div class="logo_name">Coordinates</div>
+
+            <div class="menu-btn" id="btn">
+                <div class="menu-btn_burger"></div>
+            </div>
+        </div>
+        <ul class="nav-list sidebar-ul">
+            <div class="div-one div-one-text-center">
+                <i class='bx bx-checkbox-square bx-md d-block' id="icon-one"></i>
+                <li class="sidebar-li d-none" id="menu-one" style="--clr:#3BAEB5">
+                    <a href="#" class="sidebar-a" style="letter-spacing: 1.9px;"
+                        data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home">Home</a>
+                </li>
+            </div>
+            <div class="div-two div-two-text-center">
+                <i class='bx bx-checkbox-square bx-md d-block' id="icon-two"></i>
+                <li class="sidebar-li d-none" id="menu-two" style="--clr:#3BAEB5">
+                    <a href="ricksOne.html" class="sidebar-a" style="letter-spacing: 2.5px;"
+                        data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ricks">Ricks</a>
+                </li>
+            </div>
+            <div class="div-three div-three-text-center">
+                <i class='bx bx-checkbox-square bx-md d-block' id="icon-three"></i>
+                <li class="sidebar-li d-none" id="menu-three" style="--clr:#3BAEB5">
+                    <a href="#" class="sidebar-a" style="letter-spacing: 2.6px;"
+                        data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mortys">Mortys</a>
+                </li>
+            </div>
+            <div class="div-four div-four-text-center">
+                <i class='bx bx-checkbox-square bx-md d-block' id="icon-four"></i>
+                <li class="sidebar-li d-none" id="menu-four" style="--clr:#62EF24">
+                    <a href="#" class="sidebar-a" style="letter-spacing: 2.3px;"
+                        data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Season1">Season1</a>
+                </li>
+            </div>
+            <div class="div-five div-five-text-center">
+                <i class='bx bx-checkbox-square bx-md d-block' id="icon-five"></i>
+                <li class="sidebar-li d-none" id="menu-five" style="--clr:#62EF24">
+                    <a href="#" class="sidebar-a" style="letter-spacing: 2.3px;"
+                        data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Season2">Season2</a>
+                </li>
+            </div>
+            <div class="div-six div-six-text-center">
+                <i class='bx bx-checkbox-square bx-md d-block' id="icon-six"></i>
+                <li class="sidebar-li d-none" id="menu-six" style="--clr:#62EF24">
+                    <a href="#" class="sidebar-a" style="letter-spacing: 2.3px;"
+                        data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Season3">Season3</a>
+                </li>
+            </div>
+            <div class="div-seven div-seven-text-center">
+                <i class='bx bx-checkbox-square bx-md d-block' id="icon-seven"></i>
+                <li class="sidebar-li d-none" id="menu-seven" style="--clr:#D6CA2D">
+                    <a href="#" class="sidebar-a" style="letter-spacing: 2.3px;"
+                        data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Season4">Season4</a>
+                </li>
+            </div>
+            <div class="div-eight div-eight-text-center">
+                <i class='bx bx-checkbox-square bx-md d-block' id="icon-eight"></i>
+                <li class="sidebar-li d-none" id="menu-eight" style="--clr:#D6CA2D">
+                    <a href="#" class="sidebar-a" style="letter-spacing: 2.3px;"
+                        data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Season5">Season5</a>
+                </li>
+            </div>
+            <div class="div-nine div-nine-text-center">
+                <i class='bx bx-checkbox-square bx-md d-block' id="icon-nine"></i>
+                <li class="sidebar-li d-none" id="menu-nine" style="--clr:#D6CA2D">
+                    <a href="#" class="sidebar-a" style="letter-spacing: 2.3px;"
+                        data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Season6">Season6</a>
+                </li>
+            </div>
+            <div class="div-ten div-ten-text-center">
+                <i class='bx bx-checkbox-square bx-md d-block' id="icon-ten"></i>
+                <li class="sidebar-li d-none" id="menu-ten" style="--clr:#b41b20">
+                    <a href="#" class="sidebar-a" style="letter-spacing: 1.95px;"
+                        data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gallery">Gallery</a>
+                </li>
+            </div>
+            <div class="div-eleven div-eleven-text-center">
+                <i class='bx bx-checkbox-square bx-md d-block' id="icon-eleven"></i>
+                <li class="sidebar-li d-none" id="menu-eleven" style="--clr:#b41b20">
+                    <a href="#" class="sidebar-a" style="letter-spacing: 1.95px;"
+                        data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;???">???</a>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="text">R</div>
+
+        <section class="section-slider-cards">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h3 class="slider-h3" style="font-size: 10rem;">A</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">01</h2>
+                                    <h3 class="slider-h3">Afro Morty</h3>
+                                    <img src="img/mortyAfro.webp" alt="Afro Morty" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Afro_Morty" class="slider-a"
+                                        target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">02</h2>
+                                    <h3 class="slider-h3">Alien Morty</h3>
+                                    <img src="img/mortyAlien.webp" alt="Alien Morty" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Alien_Morty"
+                                        class="slider-a" target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">03</h2>
+                                    <h3 class="slider-h3">Antenna Morty</h3>
+                                    <img src="img/mortyAntenna.webp" alt="Antenna Morty"
+                                        class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Slave(formerly)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Alive</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Antenna_Morty" class="slider-a"
+                                        target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">04</h2>
+                                    <h3 class="slider-h3">Aqua Morty</h3>
+                                    <img src="img/mortyAqua.webp" alt="Aqua Morty"
+                                        class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Aqua_Morty" class="slider-a"
+                                        target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">05</h2>
+                                    <h3 class="slider-h3">Arm Head Mutant Morty</h3>
+                                    <img src="img/mortyArmHeadMutant.webp" alt="Arm Head Mutant Morty" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Guard for The Citadel, Morty Battling</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Dazed</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Arm_Head_Mutant_Morty" class="slider-a"
+                                        target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">06</h2>
+                                    <h3 class="slider-h3">Artist Morty</h3>
+                                    <img src="img/mortyArtist.webp" alt="Artist Morty" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Alive</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Artist_Morty" class="slider-a"
+                                        target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h3 class="slider-h3" style="font-size: 10rem;">B</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">07</h2>
+                                    <h3 class="slider-h3">Bald Morty</h3>
+                                    <img src="img/mortyBald.webp" alt="Bald Morty" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Morty hairstylist</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Deceased</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Bald_Morty" class="slider-a"
+                                        target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">08</h2>
+                                    <h3 class="slider-h3">Bandholz Morty</h3>
+                                    <img src="img/mortyBandholz.webp" alt="Bandholz Morty" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Alive</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Bandholz_Morty" class="slider-a"
+                                        target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">09</h2>
+                                    <h3 class="slider-h3">Bartender Morty</h3>
+                                    <img src="img/mortyBartender.webp" alt="Bartender Morty" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Bartender at The Creepy Morty</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Alive</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Bartender_Morty"
+                                        class="slider-a" target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">10</h2>
+                                    <h3 class="slider-h3">Big Morty</h3>
+                                    <img src="img/mortyBig.webp" alt="Big Morty" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14-15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Drug Lord</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Deceased</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Big_Morty" class="slider-a"
+                                        target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">11</h2>
+                                    <h3 class="slider-h3">Big Morty's Bodyguard Mortys</h3>
+                                    <img src="img/mortyBigMorty'sBodyguard.webp" alt="Big Morty's Bodyguard Mortys" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Body Guards of Big Morty</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Deceased</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Big_Morty%27s_Bodyguard_Mortys" class="slider-a"
+                                        target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">12</h2>
+                                    <h3 class="slider-h3">Big-Head Morty</h3>
+                                    <img src="img/mortyBigHead.webp" alt="Big-Head Morty" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Big-Head_Morty" class="slider-a"
+                                        target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">13</h2>
+                                    <h3 class="slider-h3">Blue Shirt Morty</h3>
+                                    <img src="img/mortyBlueShirt.webp" alt="Blue Shirt Morty" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Blue_Shirt_Morty" class="slider-a"
+                                        target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h3 class="slider-h3" style="font-size: 10rem;">C</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">14</h2>
+                                    <h3 class="slider-h3">Campaign Manager Morty</h3>
+                                    <img src="img/rickD71B.webp" alt="Campaign Manager" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14-15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Unemployed, Campaign Manager (formerly)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Deceased</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Campaign_Manager_Morty"
+                                        class="slider-a" target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">15</h2>
+                                    <h3 class="slider-h3">Construction Dancer Morty</h3>
+                                    <img src="img/rickD716C.webp" alt="Construction Dancer" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Dancer at The Creepy Morts</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Alive</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Construction_Dancer_Morty"
+                                        class="slider-a" target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">16</h2>
+                                    <h3 class="slider-h3">Cop Morty</h3>
+                                    <img src="img/rickEvilRickTargetDimension.webp" alt="Cop Morty"
+                                        class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14-15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Police officer</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Deceased</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Cop_Morty"
+                                        class="slider-a" target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">17</h2>
+                                    <h3 class="slider-h3">Cowboy Dancer Morty</h3>
+                                    <img src="img/rickGooMonsterTarget.webp" alt="Cowboy Dancer Morty"
+                                        class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Dancer at The Creepy Mort</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Alive</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Cowboy_Dancer_Morty"
+                                        class="slider-a" target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">18</h2>
+                                    <h3 class="slider-h3">Cronenberg Morty</h3>
+                                    <img src="img/rickJ22.webp" alt="Cronenberg Morty" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Cronenberg_Morty" class="slider-a"
+                                        target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">19</h2>
+                                    <h3 class="slider-h3">Crop Top Morty</h3>
+                                    <img src="img/rickJ19a7.webp" alt="Crop Top Morty" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Alive</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Crop_Top_Morty"
+                                        class="slider-a" target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">20</h2>
+                                    <h3 class="slider-h3">Crystallized Morty</h3>
+                                    <img src="img/rickJerryBoree.webp" alt="Crystallized Morty"
+                                        class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">The dude is literally crystallized</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Crystallized</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Crystallized_Morty"
+                                        class="slider-a" target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">21</h2>
+                                    <h3 class="slider-h3">Cult Leader Morty</h3>
+                                    <img src="img/rickK22.webp" alt="Cult Leader Morty" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Cult Leader [former]</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Alive</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Cult_Leader_Morty" class="slider-a"
+                                        target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-cards">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="slider-h2">22</h2>
+                                    <h3 class="slider-h3">Cyclops Morty</h3>
+                                    <img src="img/rickC131.webp" alt="Cyclops Morty" class="img-content">
+
+                                    <table class="slider-table">
+                                        <tr>
+                                            <td class="slider-row">Age:</td>
+                                            <td class="slider-row">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Occupation:</td>
+                                            <td class="slider-row">Unknown</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="slider-row">Status:</td>
+                                            <td class="slider-row">Alive</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://rickandmorty.fandom.com/wiki/Cyclops_Morty" class="slider-a"
+                                        target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container-blob">
+            <section>
+                <div class="center-blob-number" style="z-index: 1;">
+                    <a href="ricksOne.html">
+                        <i class="fa-solid fa-1 fa-lg text-black"></i>
+                    </a>
+                </div>
+                <div class="blob">
+                    <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <g transform="translate(140.45034790039062, -13.023696899414062)">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(184, 198, 219);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(189, 212, 231);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path class="blob" fill="url(#gradient)">
+                                <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                    values="
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M419,311.5Q419,373,367.5,413Q316,453,254.5,439Q193,425,153,387.5Q113,350,79,300Q45,250,50,179Q55,108,116.5,68.5Q178,29,242,53Q306,77,340.5,118Q375,159,397,204.5Q419,250,419,311.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;">
+                                </animate>
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <!-- glow effect -->
+                <div class="blob">
+                    <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <g transform="translate(140.45034790039062, -13.023696899414062)">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(184, 198, 219);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(189, 212, 231);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path class="blob" fill="url(#gradient)">
+                                <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                    values="
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M419,311.5Q419,373,367.5,413Q316,453,254.5,439Q193,425,153,387.5Q113,350,79,300Q45,250,50,179Q55,108,116.5,68.5Q178,29,242,53Q306,77,340.5,118Q375,159,397,204.5Q419,250,419,311.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;">
+                                </animate>
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <section>
+                <div class="center-blob-number" style="z-index: 1;">
+                    <a href="ricksTwo.html">
+                        <i class="fa-solid fa-2 fa-lg text-black"></i>
+                    </a>
+                </div>
+                <div class="blob">
+                    <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <g transform="translate(140.45034790039062, -13.023696899414062)">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(184, 198, 219);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(189, 212, 231);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path class="blob" fill="url(#gradient)">
+                                <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                    values="
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M419,311.5Q419,373,367.5,413Q316,453,254.5,439Q193,425,153,387.5Q113,350,79,300Q45,250,50,179Q55,108,116.5,68.5Q178,29,242,53Q306,77,340.5,118Q375,159,397,204.5Q419,250,419,311.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;">
+                                </animate>
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <!-- glow effect -->
+                <div class="blob">
+                    <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <g transform="translate(140.45034790039062, -13.023696899414062)">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(184, 198, 219);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(189, 212, 231);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path class="blob" fill="url(#gradient)">
+                                <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                    values="
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M419,311.5Q419,373,367.5,413Q316,453,254.5,439Q193,425,153,387.5Q113,350,79,300Q45,250,50,179Q55,108,116.5,68.5Q178,29,242,53Q306,77,340.5,118Q375,159,397,204.5Q419,250,419,311.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;">
+                                </animate>
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <section>
+                <div class="center-blob-number" style="z-index: 1;">
+                    <a href="ricksThree.html">
+                        <i class="fa-solid fa-3 fa-lg text-black"></i>
+                    </a>
+                </div>
+                <div class="blob">
+                    <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <g transform="translate(140.45034790039062, -13.023696899414062)">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(184, 198, 219);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(189, 212, 231);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path class="blob" fill="url(#gradient)">
+                                <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                    values="
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M419,311.5Q419,373,367.5,413Q316,453,254.5,439Q193,425,153,387.5Q113,350,79,300Q45,250,50,179Q55,108,116.5,68.5Q178,29,242,53Q306,77,340.5,118Q375,159,397,204.5Q419,250,419,311.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;">
+                                </animate>
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <!-- glow effect -->
+                <div class="blob">
+                    <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <g transform="translate(140.45034790039062, -13.023696899414062)">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(184, 198, 219);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(189, 212, 231);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path class="blob" fill="url(#gradient)">
+                                <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                    values="
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M419,311.5Q419,373,367.5,413Q316,453,254.5,439Q193,425,153,387.5Q113,350,79,300Q45,250,50,179Q55,108,116.5,68.5Q178,29,242,53Q306,77,340.5,118Q375,159,397,204.5Q419,250,419,311.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;">
+                                </animate>
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <section>
+                <div class="center-blob-number" style="z-index: 1;">
+                    <a href="ricksFour.html">
+                        <i class="fa-solid fa-4 fa-lg text-black"></i>
+                    </a>
+                </div>
+                <div class="blob">
+                    <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <g transform="translate(140.45034790039062, -13.023696899414062)">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(184, 198, 219);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(189, 212, 231);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path class="blob" fill="url(#gradient)">
+                                <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                    values="
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M419,311.5Q419,373,367.5,413Q316,453,254.5,439Q193,425,153,387.5Q113,350,79,300Q45,250,50,179Q55,108,116.5,68.5Q178,29,242,53Q306,77,340.5,118Q375,159,397,204.5Q419,250,419,311.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;">
+                                </animate>
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <!-- glow effect -->
+                <div class="blob">
+                    <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <g transform="translate(140.45034790039062, -13.023696899414062)">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(184, 198, 219);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(189, 212, 231);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path class="blob" fill="url(#gradient)">
+                                <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                    values="
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M419,311.5Q419,373,367.5,413Q316,453,254.5,439Q193,425,153,387.5Q113,350,79,300Q45,250,50,179Q55,108,116.5,68.5Q178,29,242,53Q306,77,340.5,118Q375,159,397,204.5Q419,250,419,311.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;">
+                                </animate>
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <section>
+                <div class="center-blob-number" style="z-index: 1;">
+                    <a href="ricksFive.html">
+                        <i class="fa-solid fa-5 fa-lg text-black"></i>
+                    </a>
+                </div>
+                <div class="blob">
+                    <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <g transform="translate(140.45034790039062, -13.023696899414062)">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(184, 198, 219);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(189, 212, 231);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path class="blob" fill="url(#gradient)">
+                                <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                    values="
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M419,311.5Q419,373,367.5,413Q316,453,254.5,439Q193,425,153,387.5Q113,350,79,300Q45,250,50,179Q55,108,116.5,68.5Q178,29,242,53Q306,77,340.5,118Q375,159,397,204.5Q419,250,419,311.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;">
+                                </animate>
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <!-- glow effect -->
+                <div class="blob">
+                    <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <g transform="translate(140.45034790039062, -13.023696899414062)">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(184, 198, 219);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(189, 212, 231);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path class="blob" fill="url(#gradient)">
+                                <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                    values="
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M419,311.5Q419,373,367.5,413Q316,453,254.5,439Q193,425,153,387.5Q113,350,79,300Q45,250,50,179Q55,108,116.5,68.5Q178,29,242,53Q306,77,340.5,118Q375,159,397,204.5Q419,250,419,311.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;">
+                                </animate>
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <section>
+                <div class="center-blob-number" style="z-index: 1;">
+                    <a href="ricksSix.html">
+                        <i class="fa-solid fa-6 fa-lg text-black"></i>
+                    </a>
+                </div>
+                <div class="blob">
+                    <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <g transform="translate(140.45034790039062, -13.023696899414062)">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(184, 198, 219);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(189, 212, 231);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path class="blob" fill="url(#gradient)">
+                                <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                    values="
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M419,311.5Q419,373,367.5,413Q316,453,254.5,439Q193,425,153,387.5Q113,350,79,300Q45,250,50,179Q55,108,116.5,68.5Q178,29,242,53Q306,77,340.5,118Q375,159,397,204.5Q419,250,419,311.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;">
+                                </animate>
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <!-- glow effect -->
+                <div class="blob">
+                    <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <g transform="translate(140.45034790039062, -13.023696899414062)">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(184, 198, 219);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(189, 212, 231);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path class="blob" fill="url(#gradient)">
+                                <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                    values="
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M419,311.5Q419,373,367.5,413Q316,453,254.5,439Q193,425,153,387.5Q113,350,79,300Q45,250,50,179Q55,108,116.5,68.5Q178,29,242,53Q306,77,340.5,118Q375,159,397,204.5Q419,250,419,311.5Z;
+                                    M416.5,298Q383,346,351,404.5Q319,463,255.5,445.5Q192,428,137.5,399.5Q83,371,66.5,310.5Q50,250,67.5,190Q85,130,139,102Q193,74,249,76.5Q305,79,341.5,118Q378,157,414,203.5Q450,250,416.5,298Z;
+                                    M425.5,314.5Q428,379,372,415.5Q316,452,252,446.5Q188,441,145.5,399Q103,357,55.5,303.5Q8,250,37,183.5Q66,117,133,107Q200,97,260,66Q320,35,371.5,80Q423,125,423,187.5Q423,250,425.5,314.5Z;
+                                    M418,305Q401,360,350.5,381.5Q300,403,246.5,413.5Q193,424,128.5,404.5Q64,385,48,317.5Q32,250,51.5,185Q71,120,128,85.5Q185,51,251.5,46Q318,41,367,85.5Q416,130,425.5,190Q435,250,418,305Z;">
+                                </animate>
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+    <!-- tilt -->
+    <script src="js/tilt.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 5000,
+            },
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+        });
+
+        swiper.loopDestroy();
+        swiper.loopCreate();
+
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            // glare: true,
+            "max-glare": 1,
+        });
+    </script>
+</body>
+
+</html>

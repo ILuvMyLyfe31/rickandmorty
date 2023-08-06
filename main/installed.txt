@@ -1,0 +1,6 @@
+items that have been installed
+-sideMenu
+-menu
+-glassCards
+-swiper
+-

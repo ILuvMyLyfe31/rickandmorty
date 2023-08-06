@@ -1,0 +1,7 @@
+a b c		1
+d e f g	2
+h i j k l	3
+m n o p q	4
+r tested	5	32
+s t u v	6
+w y z		7
